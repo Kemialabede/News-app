@@ -1,0 +1,25 @@
+@import "mixin";
+@import "normalize";
+.news-content {
+  width: 64%;
+  margin: auto;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 15px;
+  background: white;
+  border: none;
+  padding-top: 15px;
+  flex-wrap: wrap;
+  @include mediaQuery(479px) {
+    width: 80%;
+  }
+}
+.news-text {
+  margin-left: 15px;
+  p {
+    word-break: break-all;
+  }
+}

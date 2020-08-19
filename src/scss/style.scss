@@ -1,0 +1,58 @@
+@import "mixin";
+@import "normalize";
+$color: rgb(141, 228, 129);
+.news-page {
+  @include mediaQuery(479px) {
+    .top-content {
+      margin-top: -5%;
+    }
+  }
+}
+.tags {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding: 20px;
+  @include mediaQuery(479px) {
+    display: flex;
+    padding: 30px;
+  }
+}
+.news {
+  background: blue;
+}
+img {
+  width: 100%;
+}
+.top-content {
+  margin-top: -2%;
+  background-color: rgb(26, 40, 44);
+  width: 100%;
+  height: 100%;
+  h1 {
+    margin: 0;
+    padding: 15px;
+    font-size: 40px;
+    color: white;
+    margin-top: 20px;
+  }
+}
+.news-feed {
+  background-color: $color;
+  height: 100%;
+  padding-bottom: 5%;
+}
+.search-news {
+  width: 100%;
+  height: 700px;
+  padding-top: 5%;
+  font-size: 46px;
+  color: whitesmoke;
+  @include mediaQuery(479px) {
+    padding-top: 25%;
+    font-size: 45px;
+  }
+}
+.news-background {
+  background: $color;
+}

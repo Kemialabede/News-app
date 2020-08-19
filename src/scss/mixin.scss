@@ -1,0 +1,6 @@
+@import "normalize";
+@mixin mediaQuery($arg) {
+  @media screen and (max-width: ($arg)) {
+    @content;
+  }
+}

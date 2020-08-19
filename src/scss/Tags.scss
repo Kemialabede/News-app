@@ -1,0 +1,14 @@
+@import "normalize";
+@import "mixin";
+.tag-content {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  margin-bottom: 10px;
+  @include mediaQuery(479px) {
+    margin-left: 7px;
+  }
+}

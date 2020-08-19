@@ -1,0 +1,44 @@
+@import "normalize";
+@import "mixin";
+.search {
+  border: 1px solid black;
+  height: 40px;
+  width: 50%;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  border {
+    top: none;
+    left: none;
+  }
+  background-color: white;
+
+  input {
+    width: 90%;
+    height: 35px;
+    outline: none;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  .search-icon {
+    width: 30px;
+    height: 60%;
+  }
+  .search-input {
+    background-color: white;
+  }
+  @include mediaQuery(479px) {
+    width: 90%;
+    height: 45px;
+    margin: auto;
+  }
+  .search-icon {
+    margin-right: 16px;
+  }
+  .input {
+    margin-bottom: 10px;
+  }
+}
